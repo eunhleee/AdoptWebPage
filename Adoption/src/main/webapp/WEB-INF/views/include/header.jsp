@@ -52,6 +52,7 @@
 
 							<!-- Social Button -->
 							<div class="top-social-info">
+								<a href="categoryWriteForm">품종추가</a>
 								<c:if test="${sessionScope.userID!=null }">
 									<a href="userLogout">로그아웃(${sessionScope.userID})</a>
 								</c:if>
@@ -108,45 +109,49 @@
 									<li><a href="#">강아지 분양</a>
 										<div class="megamenu">
 											<ul class="single-mega cn-col-4">
-												<li><a href="#">대형견</a></li>
+												<li><a href="#">소형견</a></li>
 												<c:forEach var="item" items="${ctg1}">
-													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun2}</a></li>
+													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun3}</a></li>
 												</c:forEach>
 											</ul>
 											<ul class="single-mega cn-col-4">
 												<li><a href="#">중형견</a></li>
 													<c:forEach var="item" items="${ctg2}">
-													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun2}</a></li>
+													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun3}</a></li>
 												</c:forEach>
 											</ul>
 											<ul class="single-mega cn-col-4">
-												<li><a href="#">소형견</a></li>
+												<li><a href="#">대형견</a></li>
 													<c:forEach var="item" items="${ctg3}">
-													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun2}</a></li>
+													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun3}</a></li>
 												</c:forEach>
 											</ul>
-											
+											<ul class="single-mega cn-col-4">
+												<li><a href="#">특수견 / ETC</a></li>
+											</ul>
 										</div></li>
 									<li><a href="#">고양이 분양</a><div class="megamenu">
 											<ul class="single-mega cn-col-4">
-												<li><a href="#">대형묘</a></li>
-												<c:forEach var="item" items="${ctg1}">
-													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun2}</a></li>
+												<li><a href="#">소형묘</a></li>
+												<c:forEach var="item" items="${ctg4}">
+													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun3}</a></li>
 												</c:forEach>
 											</ul>
 											<ul class="single-mega cn-col-4">
 												<li><a href="#">중형묘</a></li>
-													<c:forEach var="item" items="${ctg2}">
-													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun2}</a></li>
+													<c:forEach var="item" items="${ctg5}">
+													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun3}</a></li>
 												</c:forEach>
 											</ul>
 											<ul class="single-mega cn-col-4">
-												<li><a href="#">소형묘</a></li>
-													<c:forEach var="item" items="${ctg3}">
-													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun2}</a></li>
+												<li><a href="#">대형묘</a></li>
+													<c:forEach var="item" items="${ctg6}">
+													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun3}</a></li>
 												</c:forEach>
 											</ul>
-											
+											<ul class="single-mega cn-col-4">
+												<li><a href="#">특수묘 / etc</a></li>
+											</ul>
 										</div></li>
 									<li><a href="#">입양 후 소식</a></li>
 									<li><a href="adoptRequest">분양 신청</a></li>

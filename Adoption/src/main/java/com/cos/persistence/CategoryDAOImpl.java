@@ -22,9 +22,15 @@ public class CategoryDAOImpl implements CategoryDAO{
 	}
 
 	@Override
-	public List<CategoryVO> selectGubun1(int ctGubun1) throws Exception {
-		return session.selectList(namespace+".selectGubun1", ctGubun1);
+	public List<CategoryVO> selectGubun1(int ctGubun2) throws Exception {
+		return session.selectList(namespace+".selectGubun1", ctGubun2);
 	}
+	
+	@Override
+	public List<CategoryVO> selectGubun2(int ctGubun2) throws Exception {
+		return session.selectList(namespace+".selectGubun2", ctGubun2);
+	}
+
 
 	@Override
 	public CategoryVO select(int ctNum) throws Exception {

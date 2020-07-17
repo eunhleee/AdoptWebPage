@@ -21,8 +21,13 @@ public class CategoryServiceImpl implements CategoryService{
 	}
 
 	@Override
-	public List<CategoryVO> selectGubun1(int ctGubun1) throws Exception {
-		return dao.selectGubun1(ctGubun1);
+	public List<CategoryVO> selectGubun1(int ctGubun2) throws Exception {
+		return dao.selectGubun1(ctGubun2);
+	}
+	
+	@Override
+	public List<CategoryVO> selectGubun2(int ctGubun2) throws Exception {
+		return dao.selectGubun2(ctGubun2);
 	}
 
 	@Override
